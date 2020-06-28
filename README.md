@@ -15,5 +15,6 @@ Attempt to learn scraping using Scrapy.
   - Engine - Coordination between components, Operational consistency
   - Scheduler-Preserving operational ordr, simple Queue
 
-##Other Resources
+## Other Resources
+- https://docs.scrapy.org/en/latest/
 
