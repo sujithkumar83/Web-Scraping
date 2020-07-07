@@ -17,4 +17,6 @@ Attempt to learn scraping using Scrapy.
 
 ## Other Resources
 - https://docs.scrapy.org/en/latest/
+- Xpath playground - https://scrapinghub.github.io/xpath-playground/
+- CSS playground - https://try.jsoup.org/
 
