@@ -8,9 +8,8 @@ class AmazonHaircareSpider(scrapy.Spider):
     start_urls = ['https://www.amazon.co.uk/b/ref=s9_acss_bw_cg_HairCar_2a1_w?node=74094031/']
 
     def parse(self, response):
-        def parse(self, response):
-            for product in response.xpath("//div[@class='s-main-slot s-result-list s-search-results sg-row']"):
-                yield {
+        for product in response.xpath("//div[@class='s-main-slot s-result-list s-search-results sg-row']/div/@data-asin"):
+            yield {
                     'id': product.xpath(".//div[@class='fop-item fop-item-offer']/@data-sku/text()").get(),
                     'prod_name': product.xpath(".//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-4']/a[@class='a-link-normal a-text-normal']/span[@class='a-size-base-plus a-color-base a-text-normal']/text()").get(),
                     'sponsored': product.xpath(".//div[@class='a-row a-spacing-micro']/span[@class='a-size-mini a-color-secondary']/text()").get(),

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for morrisons project
+# Scrapy settings for sainsburys2 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,17 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'morrisons'
+BOT_NAME = 'sainsburys2'
 
-SPIDER_MODULES = ['morrisons.spiders']
-NEWSPIDER_MODULE = 'morrisons.spiders'
+SPIDER_MODULES = ['sainsburys2.spiders']
+NEWSPIDER_MODULE = 'sainsburys2.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'morrisons (+http://www.yourdomain.com)'
+#USER_AGENT = 'sainsburys2 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,25 +47,15 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'morrisons.middlewares.MorrisonsSpiderMiddleware': 543,
+#    'sainsburys2.middlewares.Sainsburys2SpiderMiddleware': 543,
 #}
-#ADDN
-SPIDER_MIDDLEWARES = {
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'morrisons.middlewares.MorrisonsDownloaderMiddleware': 543,
+#    'sainsburys2.middlewares.Sainsburys2DownloaderMiddleware': 543,
 #}
-#ADDN
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-}
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
@@ -75,7 +65,7 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'morrisons.pipelines.MorrisonsPipeline': 300,
+#    'sainsburys2.pipelines.Sainsburys2Pipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -98,9 +88,4 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-#ADDN
 FEED_EXPORT_ENCODING= 'utf-8'
-#ADDN
-SPLASH_URL = 'http://192.168.1.9:8050'
-#192.168.1.9
-#172.17.0.2
