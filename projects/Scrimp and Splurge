@@ -1,0 +1,50 @@
+** Common Configs
+	** Analysis period 52 weeks
+	** Sample data is ok (customer sample)
+	** Market: TUK
+	** Category Shampoo only
+** Deliverables
+	#1 Product table (all columns)
+	#2 Product Summary table: ID, Desc, totalsales_52, totalqty_52, totalbaskets_52, cardsales_52, cardqty_52, cardbaskets_52
+	#3 Store-Date level wtd PPU and wtd PPW
+	#4 Table #4
+	
+** Suggested Data processing stesps
+	** Filter the Product table for Shampoo category products only
+	** Attach sales, qty and basket data to it at total and cardholder level
+	** Calculate price index by store
+		** take daily transactions (card + non card) and filter it for only Shampoo products
+			** calculate rPPU at every transaction line as - Sales
+			** Calculate rPPW at every transaction as - Sales/ Weight
+			** Aggregate at [date-store level] the following columns wtd_avg_ppu and wtd_avg_ppw
+				** wtd_avg_ppu= Sum(rPPU)/sum(qty)
+				** wtd_avg_ppw= Sum(rPPW)/sum(qty)
+				** This is Table #3
+	** Calculate price index by customer and index it
+		** take daily transactions (card only) and filter it for only Shampoo products
+			** record and report total net sales, qty and baskets
+			** now remove customers <3 visits (baskets)
+			** record and report the net sales, qty and baskets 
+			** calculate rPPU at every transaction line as - Sales 
+			** Calculate rPPW at every transaction as - Sales/ Weight 
+			** Aggregate at [date-cust-store level] qty, rPPU, rPPW
+				** Cwtd_avg_ppu= Sum(rPPU)/sum(qty)
+				** Cwtd_avg_ppw= Sum(rPPW)/sum(qty)
+			** Merge with Table #3 (on Table #3 DROP EVERYTHING EXCEPT STORE, DATE, wtd_avg_ppu, wtd_avg_ppw) on date-store
+				** ppu= Cwtd_avg_ppu/wtd_avg_ppu* qty
+				** ppw= Cwtd_avg_ppw/wtd_avg_ppw * qty
+				
+			** Aggregate at customer level
+				** ppu_index=ppu/ sum(qty)
+				** ppw_index=ppw/sum(qty)
+	** Statistical treatment
+		** Winsorise and standardise the ppu_index and ppw_index
+
+https://www.kdnuggets.com/2018/10/notes-feature-preprocessing-what-why-how.html		
+
+		** Create PCA on treated columns std_ppw_index and std_ppw_index
+		** Create PCA plots (CDF) and find inflection pt for prin1 and prin2 (see excel tab scrimp and splurge)
+		** Create segments in the table (based on the inflection point) values
+		** store the table #4
+			
+				

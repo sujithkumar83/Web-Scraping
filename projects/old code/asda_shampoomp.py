@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy_splash import SplashRequest
+from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider, Rule
 
 
 class AsdaShampooSpider(scrapy.Spider):
@@ -43,21 +45,18 @@ class AsdaShampooSpider(scrapy.Spider):
             
             end
     '''
-    lnk="https://groceries.asda.com/shelf/health-beauty/hair-care/shampoo-conditioner/shampoo/103730"
-    
+    rule=(
+        Rule(LinkExtractor(restrict_xpaths=),callback='parse_item', follow=True),
+    )
     def start_requests(self):
-        yield SplashRequest(url=self.lnk, callback=self.parse, endpoint="execute",args={
+        yield SplashRequest(url="https://groceries.asda.com/shelf/health-beauty/hair-care/shampoo-conditioner/shampoo/103730", callback=self.parse, endpoint="execute",args={
             'lua_source': self.script
         })
-    
 
-    def parse(self, response):
-        
-        self.rng=int(response.xpath(".//button[@class='asda-link asda-link--primary asda-link--button co-pagination__last-page']/text()").get())
-        
+    def parse_item(self, response):
         for product in response.xpath("//div[@class=' co-product-list']/ul[@class=' co-product-list__main-cntr']/li/div[@class='co-product']"):
             yield {
-                'id': product.xpath(".//h3[@class='co-product__title']/a/@href").get(),
+                'id': product.xpath(".//div[@class='productNameAndPromotions']/div/@barcode").get(),
                 'prod_name': product.xpath(".//div/div[@class='co-item__title-container']/h3/a/text()").getall(),
                 'qty': product.xpath(".//div[@class='co-item__volume-container co-item__items']/span/text()").getall(),
                 'discounted_price': product.xpath(".//strong[@class='co-product__price']/text()").get(),
@@ -67,18 +66,7 @@ class AsdaShampooSpider(scrapy.Spider):
                 'unit_price': product.xpath(".//span[@class='co-product__price-per-uom']/text()").get(),
                 'orig_price': product.xpath(".//span[@class='co-product__was-price']/text()").get()
 
-                }
-            
-            
-
-            
+                    }
         
-        
-        
-        
-        
-        
-
-            
 
       

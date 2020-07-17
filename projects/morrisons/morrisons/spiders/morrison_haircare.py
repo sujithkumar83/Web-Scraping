@@ -11,11 +11,14 @@ class MorrisonHaircareSpider(scrapy.Spider):
         function main(splash, args)
             local num_scrolls = 10
             local scroll_delay = 1
-
+            splash.private_mode_enabled=false
             local scroll_to = splash:jsfunc("window.scrollTo")
             local get_body_height = splash:jsfunc(
                 "function() {return document.body.scrollHeight;}"
             )
+            splash: on_request(function(request)
+                request:set_header('User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')
+                end)
             --#Pass the url as an argument
             url= args.url
             --#Open the website

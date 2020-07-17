@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for waitrose project
+# Scrapy settings for tesco project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,17 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'waitrose'
+BOT_NAME = 'tesco'
 
-SPIDER_MODULES = ['waitrose.spiders']
-NEWSPIDER_MODULE = 'waitrose.spiders'
+SPIDER_MODULES = ['tesco.spiders']
+NEWSPIDER_MODULE = 'tesco.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'waitrose (+http://www.yourdomain.com)'
+#USER_AGENT = 'tesco (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,7 +47,7 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'waitrose.middlewares.WaitroseSpiderMiddleware': 543,
+#    'tesco.middlewares.TescoSpiderMiddleware': 543,
 #}
 #ADDN
 SPIDER_MIDDLEWARES = {
@@ -57,7 +57,7 @@ SPIDER_MIDDLEWARES = {
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'waitrose.middlewares.WaitroseDownloaderMiddleware': 543,
+#    'tesco.middlewares.TescoDownloaderMiddleware': 543,
 #}
 #ADDN
 DOWNLOADER_MIDDLEWARES = {
@@ -66,6 +66,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -76,7 +77,7 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'waitrose.pipelines.WaitrosePipeline': 300,
+#    'tesco.pipelines.TescoPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
