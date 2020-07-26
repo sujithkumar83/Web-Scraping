@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from datetime import datetime
 from scrapy_splash import SplashRequest
 
 class SainsburysHaircareSpider(scrapy.Spider):
     name = 'sainsburys_haircare'
-    allowed_domains = ['https://www.sainsburys.co.uk']
+    #allowed_domains = ['https://www.sainsburys.co.uk']
     #start_urls = ['https://www.sainsburys.co.uk/shop/gb/groceries/health-beauty/shampoo-247823-44']
 
     script= '''
@@ -24,7 +25,7 @@ class SainsburysHaircareSpider(scrapy.Spider):
             --#Open the website
             assert(splash:go(url))
             --#Wait for it load
-            assert(splash:wait(3))
+            assert(splash:wait(10))
             
             splash:set_viewport_full()
             for _ = 1, num_scrolls do
@@ -44,17 +45,32 @@ class SainsburysHaircareSpider(scrapy.Spider):
     '''
     def start_requests(self):
         yield SplashRequest(url="https://www.sainsburys.co.uk/shop/gb/groceries/health-beauty/shampoo-247823-44", callback=self.parse, endpoint="execute",args={
+            'timeout':1800,
             'lua_source': self.script
         })
+    client="Sainsburys"
+    category="Shampoo"
+    time = datetime.now()
     def parse(self, response):
-        for product in response.xpath("//ul[@class='productLister gridView']/li[@class='gridItem']"):
+        for product in response.xpath("//ul[@class='productLister gridView']/li[@class='gridItem']/div[contains(@class,'product ')]"):
             yield {
-                'id': product.xpath("//div[@class='productNameAndPromotions']/div[@class='FM_suitability_indicator']/@barcode").getall(),
-                'prod_name': product.xpath("normalize-space(//div/div/div/h3/a/text()[1])").getall(),
-                'discounted_price': product.xpath("//div/div/div/div/div[contains(@class,'priceTab ')]/div/p[@class='pricePerUnit']/text()[1]").getall(),
-                'offer_desc': product.xpath("//div/div/div/div/p/a/text()").getall(),     
-                'url': product.xpath("//div/div/div/h3/a/@href").getall(),
-                'rating': product.xpath("//div/div/div/div/div/div[@class='reviews']/a/img/@alt").getall(),           
-                'unit_price': product.xpath("//div/div[@class='addToTrolleytabContainer addItemBorderTop']/div/div/div/p[@class='pricePerMeasure']/text()[1]").getall(),
-                'availability': product.xpath("//div[@class='messageBox']/p/text()").getall()
+                'client': self.client,
+                'time': self.time,
+                'category': self.category,
+                'id': product.xpath(".//div[@class='productNameAndPromotions']/div[@class='FM_suitability_indicator']/@barcode").get(),
+                'sainsburys_prod_name': product.xpath("normalize-space(.//div/div/h3/a/text()[1])").get(),
+                'sainsburys_discounted_price': product.xpath("normalize-space(.//div/div/div/div[contains(@class,'priceTab ')]/div/p[@class='pricePerUnit']/text()[1])").get(),
+                'sainsburys_offer_desc': product.xpath(".//div/div[@class='productNameAndPromotions']/div[@class='promotion']/p/a/text()[1]").get(),     
+                'sainsburys_url': product.xpath(".//div/div/h3/a/@href").get(),
+                'sainsburys_rating': product.xpath(".//div/div/div/div/div[@class='reviews']/a/img/@alt").get(),           
+                'sainsburys_unit_price': product.xpath(".//div[@class='addToTrolleytabContainer addItemBorderTop']/div/div/div/p[@class='pricePerMeasure']/text()[1]").get(),
+                'sainsburys_availability': product.xpath(".//div[@class='messageBox']/p/text()").get(),
+                
             }
+        
+        lnk2=response.xpath("//div[@class='pagination']/ul/li[@class='next']/a/@href").get()
+        if lnk2:
+            yield SplashRequest(url=lnk2, callback=self.parse, endpoint="execute",args={
+                'timeout':1800,
+                'lua_source': self.script
+            })
