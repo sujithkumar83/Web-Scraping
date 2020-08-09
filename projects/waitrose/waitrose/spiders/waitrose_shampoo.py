@@ -25,30 +25,29 @@ class WaitroseShampooSpider(scrapy.Spider):
         --#Open the website
         assert(splash:go(url))
         --#Wait for it load
-        assert(splash:wait(10))
+        assert(splash:wait(20))
 
         if splash:select("body > div:nth-child(6) > div > div > div > section > div.acceptCookieCTA___NwqHh > button:nth-child(1)")~= nil then
             element = splash:select("body > div:nth-child(6) > div > div > div > section > div.acceptCookieCTA___NwqHh > button:nth-child(1)")
             element:mouse_click()
-            assert(splash:wait(10))
+            assert(splash:wait(20))
             --[[local height = get_body_height()
             for i = 1, 10 do
                 scroll_to(0, height * i/10)
                 assert(splash:wait(4))
             end]]--
         end 
-
-        while (splash:select("#tSr > div > div.loadMoreWrapper___UneG1 > button")~=nil)
-        do
+        while (splash:select("#tSr > div > div.loadMoreWrapper___UneG1 > button")~=nil) do
             local load_more=splash:select("#tSr > div > div.loadMoreWrapper___UneG1 > button")  
             load_more:mouse_click()
-            assert(splash:wait(10))
-            --[[local height = get_body_height()
-            for i = 1, 10 do
-                scroll_to(0, height * i/10)
-                assert(splash:wait(4))
+            assert(splash:wait(15))
+            local height = get_body_height()
+            --[[for i = 1, 4 do
+                scroll_to(0, height * i/4)
+                assert(splash:wait(2))
             end]]--
         end
+        
         splash:set_viewport_full()
 
         return {

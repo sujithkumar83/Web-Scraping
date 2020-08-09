@@ -49,6 +49,7 @@ ROBOTSTXT_OBEY = False
 #SPIDER_MIDDLEWARES = {
 #    'sainsburys.middlewares.sainsburysSpiderMiddleware': 543,
 #}
+#ADDN
 SPIDER_MIDDLEWARES = {
     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
 }
@@ -74,9 +75,15 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'sainsburys.pipelines.sainsburysPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'sainsburys.pipelines.SQLlitePipeline': 300,
+   'sainsburys.pipelines.ImageDownloaderPipeline':1
+}
+DOWNLOAD_TIMEOUT=1200
+
+IMAGES_STORE= 'C:/dev/personal/Web Scraping/projects/sainsburys/imgs'
+
+IMAGES_EXPIRES = 30
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

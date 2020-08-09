@@ -73,9 +73,15 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'asda.pipelines.AsdaPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'asda.pipelines.SQLlitePipeline': 300,
+   'asda.pipelines.ImageDownloaderPipeline':1
+}
+DOWNLOAD_TIMEOUT=1200
+
+IMAGES_STORE= 'C:/dev/personal/Web Scraping/projects/asda/imgs'
+
+IMAGES_EXPIRES = 30
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

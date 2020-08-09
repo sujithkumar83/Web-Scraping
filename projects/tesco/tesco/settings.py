@@ -76,9 +76,15 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'tesco.pipelines.TescoPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'tesco.pipelines.SQLlitePipeline': 300,
+   'tesco.pipelines.ImageDownloaderPipeline':1
+}
+DOWNLOAD_TIMEOUT=1200
+
+IMAGES_STORE= 'C:/dev/personal/Web Scraping/projects/tesco/imgs'
+
+IMAGES_EXPIRES = 30  
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

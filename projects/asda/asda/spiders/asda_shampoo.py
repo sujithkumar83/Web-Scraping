@@ -2,6 +2,8 @@
 import scrapy
 from scrapy_splash import SplashRequest
 from datetime import datetime
+import json
+from scrapy.selector import Selector
 
 class AsdaShampooSpider(scrapy.Spider):
     name = 'asda_shampoo'
@@ -11,8 +13,8 @@ class AsdaShampooSpider(scrapy.Spider):
     script= '''
         function main(splash, args)
             --splash.resource_timeout=300
-            local num_scrolls = 6
-            local scroll_delay = 4
+            local num_scrolls = 2
+            local scroll_delay = 2
             splash.private_mode_enabled=true
             local scroll_to = splash:jsfunc("window.scrollTo")
             local get_body_height = splash:jsfunc(
@@ -26,9 +28,65 @@ class AsdaShampooSpider(scrapy.Spider):
             --#Open the website
             assert(splash:go(url))
             --#Wait for it load
-            assert(splash:wait(30))
+            assert(splash:wait(40))
 
             --splash:set_viewport_full()
+            for _ = 1, num_scrolls do
+                local height = get_body_height()
+                for i = 1, 15 do
+                scroll_to(0, height * i/15)
+                assert(splash:wait(scroll_delay))
+                end
+            end
+            return {
+                --png=splash:png(),
+                --#return html
+                html= splash:html()  
+            }
+           
+                       
+        end
+    '''
+    script2= '''
+        local treat = require("treat")
+        function main(splash, args)
+            splash.private_mode_enabled=true
+            splash: on_request(function(request)
+                request:set_header('User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')
+                end)
+            --#Pass the url as an argument
+            url= args.url
+            --#Open the website
+            assert(splash:go(url))
+            --#Wait for it load
+            assert(splash:wait(40))
+            local result = treat.as_array({})
+            i=1
+            while splash:select("#main-content > main > div.page-navigation > div > button.asda-btn.asda-btn--clear.co-pagination__arrow.co-pagination__arrow--right > span.asda-icon.asda-icon--charcoal.asda-icon--small.asda-icon--rotate270") do
+                first_click(splash) 
+                local res = {
+                html=splash:html()
+                }
+                result[i] = res
+                i=i+1
+                local element=splash:select("#main-content > main > div.page-navigation > div > button.asda-btn.asda-btn--clear.co-pagination__arrow.co-pagination__arrow--right")
+                element:mouse_click()
+                assert(splash:wait(35))
+            end
+            return result
+
+        end
+
+        function first_click(splash)
+            --splash.resource_timeout=300
+            local num_scrolls = 2
+            local scroll_delay = 4
+            local scroll_to = splash:jsfunc("window.scrollTo")
+            local get_body_height = splash:jsfunc(
+                "function() {return document.body.scrollHeight;}"
+            )
+            --splash:set_viewport_full()
+            
             for _ = 1, num_scrolls do
                 local height = get_body_height()
                 for i = 1, 5 do
@@ -36,14 +94,9 @@ class AsdaShampooSpider(scrapy.Spider):
                 assert(splash:wait(scroll_delay))
                 end
             end
-            return {
-                png=splash:png(),
-                --#return html
-                html= splash:html()  
-            }
-           
-                       
+
         end
+
     '''
     lnk="https://groceries.asda.com/shelf/health-beauty/hair-care/shampoo-conditioner/shampoo/103730"    
     
@@ -54,12 +107,19 @@ class AsdaShampooSpider(scrapy.Spider):
             'timeout':1800,
             'lua_source': self.script
         })
+        for i in range(1,4):
+            lnk2="https://groceries.asda.com/shelf/health-beauty/hair-care/shampoo-conditioner/shampoo/103730?facets=shelf%3A103730%3A0000&nutrition=&sortBy=&page="+str(i*60)
+
+            yield SplashRequest(url=lnk2, callback=self.parse, endpoint="execute",args={
+                'timeout':1800,
+                'lua_source': self.script
+            })
     client="asda"
     category="Shampoo"
     time = datetime.now()
 
     def parse(self, response):
-
+        
         for product in response.xpath("//div[@class='co-lazy-product-container']/div[@class=' co-product-list']/ul[@class=' co-product-list__main-cntr']/li/div[@class='co-product']"):
             yield {
                 'client': self.client,
@@ -75,14 +135,7 @@ class AsdaShampooSpider(scrapy.Spider):
                 'asda_unit_price': product.xpath(".//span[@class='co-product__price-per-uom']/text()").get(),
                 'asda_orig_price': product.xpath(".//span[@class='co-product__was-price']/text()").get(),
                 'asda_prod_name': product.xpath(".//div/div[@class='co-item__title-container']/h3/a/text()").get() + ' ' + product.xpath(".//div[@class='co-item__volume-container co-item__items']/span/text()").get()
-
             }
-        for i in range(1,4):
-            lnk2="https://groceries.asda.com/shelf/health-beauty/hair-care/shampoo-conditioner/shampoo/103730?facets=shelf%3A103730%3A0000&nutrition=&sortBy=&page="+str(i*60)
-
-            yield SplashRequest(url=lnk2, callback=self.parse, endpoint="execute",args={
-                'timeout':1800,
-                'lua_source': self.script
-            })
+        
         
     

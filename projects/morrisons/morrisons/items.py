@@ -6,9 +6,17 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.loader.processors import TakeFirst, MapCompose
+import os
 
+def remove_extension(value):
 
+    return os.path.splitext(value)[0]
 class MorrisonsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+    image_name=scrapy.Field(
+        input_processor = MapCompose(remove_extension),
+        Output_processor = TakeFirst()
+    )

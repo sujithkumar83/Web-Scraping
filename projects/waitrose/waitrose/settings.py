@@ -75,10 +75,15 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'waitrose.pipelines.WaitrosePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'waitrose.pipelines.SQLlitePipeline': 300,
+   'waitrose.pipelines.ImageDownloaderPipeline':1
+}
+DOWNLOAD_TIMEOUT=1200
 
+IMAGES_STORE= 'C:/dev/personal/Web Scraping/projects/waitrose/imgs'
+
+IMAGES_EXPIRES = 30
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
