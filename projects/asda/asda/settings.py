@@ -105,6 +105,7 @@ IMAGES_EXPIRES = 30
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 FEED_EXPORT_ENCODING= 'utf-8'
 #ADDN
-SPLASH_URL = 'http://192.168.1.9:8050'
+#SPLASH_URL = 'http://192.168.1.9:8050'
+SPLASH_URL = 'http://192.168.1.2:8050'
 #192.168.1.9
 #172.17.0.2

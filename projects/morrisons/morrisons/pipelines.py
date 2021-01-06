@@ -9,6 +9,8 @@ import logging
 import sqlite3
 import scrapy
 from scrapy import Request  
+import re
+import ftfy as ft
 
 
 class SQLlitePipeline(object):
@@ -94,6 +96,10 @@ class ImageDownloaderPipeline(ImagesPipeline):
     def get_media_requests(self, item, info):
         return [Request(x, meta={'imagename': item.get('image_name')}) for x in item.get(self.images_urls_field, [])]
 
+    
+
     def file_path(self, request, response=None, info=None):
         url = request.url
+
+       
         return 'full/%s.jpg' % (request.meta['imagename'])

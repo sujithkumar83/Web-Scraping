@@ -1,14 +1,45 @@
 import scrapy
 import chompjs
+import logging
+import re
+import ftfy as ft
 from scrapy_splash import SplashRequest
 from scrapy.loader import ItemLoader
+from scrapy.utils.log import configure_logging
 from tesco.items import TescoItem
 class TescoImageDowloader(scrapy.Spider):
     name = 'imgdownloader'
-    
+    configure_logging(install_root_handler=False)
+    logging.basicConfig(
+        filename='log.txt',
+        format='%(levelname)s: %(message)s',
+        level=logging.INFO
+    )
     allowed_domains = ['https://www.tesco.com']
     
-    
+    frtoeng = "".maketrans("àâçéèêîôùû", "aaceeeiouu")
+    def cleanup(self, string):
+        string = ft.fix_text(string) # fix text encoding issues
+        string = string.translate(self.frtoeng)
+        string = string.encode("ascii", errors="ignore").decode() #remove non ascii chars
+        string = string.lower() #make lower case
+        chars_to_remove = [")","(",".","|","[","]","{","}","'","`","/","~"]
+        rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
+        string = re.sub(rx, '', string) #remove the list of chars defined above
+        string = string.replace('&', '')
+        string = string.replace('and', '')
+        string = string.replace('ml', '')
+        string = string.replace('Ml', 'ml')
+        string = string.replace(',', ' ')
+        string = string.replace('-', ' ')
+        string = string.replace('+', ' ')
+        #string="".join(sorted(string))
+        #string = string.replace('shampoo', '') (doesnt work as most of the conditioners come into play which they shouldnt)
+        #string = string.title() # normalise case - capital at start of each word
+        string = re.sub(' +',' ',string).strip() # get rid of multiple spaces and replace with a single space
+        # string = ' '+ string +' ' # pad names for ngrams...
+        string = re.sub(r'[,-./]|\sBD',r'', string)
+        return string
     def start_requests(self):
         yield scrapy.Request(url='https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/haircare/shampoo', callback=self.parse1, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'
@@ -40,9 +71,9 @@ class TescoImageDowloader(scrapy.Spider):
             tesco_prod_name=" "
             tesco_img_url = items['defaultImageUrl']
             tesco_prod_name = items['title'] 
-            print(tesco_img_url)
+            name= self.cleanup(tesco_prod_name)
             loader.add_value('image_urls', tesco_img_url)    
-            loader.add_value('image_name', tesco_prod_name)
+            loader.add_value('image_name', name)
             yield loader.load_item()  
         next_url= response.xpath("//nav[@class='pagination--page-selector-wrapper']/ul/li/a[@class='pagination--button prev-next'][@aria-label='Go to results page']/@href").get()
         if next_url:

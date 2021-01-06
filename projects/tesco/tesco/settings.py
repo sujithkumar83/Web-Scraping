@@ -27,7 +27,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+# DOWNLOAD_DELAY = 5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -50,9 +50,9 @@ ROBOTSTXT_OBEY = False
 #    'tesco.middlewares.TescoSpiderMiddleware': 543,
 #}
 #ADDN
-# SPIDER_MIDDLEWARES = {
-#     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-# }
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -60,12 +60,12 @@ ROBOTSTXT_OBEY = False
 #    'tesco.middlewares.TescoDownloaderMiddleware': 543,
 #}
 #ADDN
-# DOWNLOADER_MIDDLEWARES = {
-#     'scrapy_splash.SplashCookiesMiddleware': 723,
-#     'scrapy_splash.SplashMiddleware': 725,
-#     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-# }
-# DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 
 # Enable or disable extensions
@@ -109,6 +109,6 @@ IMAGES_EXPIRES = 30
 #ADDN
 FEED_EXPORT_ENCODING= 'utf-8'
 #ADDN
-# SPLASH_URL = 'http://192.168.1.9:8050'
+SPLASH_URL = 'http://192.168.1.2:8050'
 #192.168.1.9
 #172.17.0.2

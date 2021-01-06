@@ -1,10 +1,19 @@
 import scrapy
+import logging
+import re
+import ftfy as ft
 from scrapy_splash import SplashRequest
 from scrapy.loader import ItemLoader
+from scrapy.utils.log import configure_logging 
 from asda.items import AsdaItem
 class AsdaImageDowloader(scrapy.Spider):
     name = 'imgdownloader'
-
+    configure_logging(install_root_handler=False)
+    logging.basicConfig(
+        filename='log.txt',
+        format='%(levelname)s: %(message)s',
+        level=logging.INFO
+    )
     
     script= '''
         function main(splash, args)
@@ -43,6 +52,29 @@ class AsdaImageDowloader(scrapy.Spider):
                        
         end
     '''
+    frtoeng = "".maketrans("àâçéèêîôùû", "aaceeeiouu")
+    def cleanup(self, string):
+        string = ft.fix_text(string) # fix text encoding issues
+        string = string.translate(self.frtoeng)
+        string = string.encode("ascii", errors="ignore").decode() #remove non ascii chars
+        string = string.lower() #make lower case
+        chars_to_remove = [")","(",".","|","[","]","{","}","'","`","/","~"]
+        rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
+        string = re.sub(rx, '', string) #remove the list of chars defined above
+        string = string.replace('&', '')
+        string = string.replace('and', '')
+        string = string.replace('ml', '')
+        string = string.replace('Ml', 'ml')
+        string = string.replace(',', ' ')
+        string = string.replace('-', ' ')
+        string = string.replace('+', ' ')
+        #string="".join(sorted(string))
+        #string = string.replace('shampoo', '') (doesnt work as most of the conditioners come into play which they shouldnt)
+        #string = string.title() # normalise case - capital at start of each word
+        string = re.sub(' +',' ',string).strip() # get rid of multiple spaces and replace with a single space
+        # string = ' '+ string +' ' # pad names for ngrams...
+        string = re.sub(r'[,-./]|\sBD',r'', string)
+        return string
     lnk="https://groceries.asda.com/shelf/health-beauty/hair-care/shampoo-conditioner/shampoo/103730"    
     
     
@@ -67,7 +99,8 @@ class AsdaImageDowloader(scrapy.Spider):
             loader=ItemLoader(item=AsdaItem(), selector=product)
             asda_img_url = product.xpath(".//div[@class='co-item__col1']/button/img/@src").get()
             asda_prod_name = product.xpath(".//div/div[@class='co-item__title-container']/h3/a/text()").get() + ' ' + product.xpath(".//div[@class='co-item__volume-container co-item__items']/span/text()").get()
+            name= self.cleanup(asda_prod_name)
             loader.add_value('image_urls', asda_img_url)    
-            loader.add_value('image_name', asda_prod_name)
+            loader.add_value('image_name', name)
             yield loader.load_item()
          

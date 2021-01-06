@@ -1,10 +1,19 @@
 import scrapy
+import logging
+import re
+import ftfy as ft
 from scrapy_splash import SplashRequest
 from scrapy.loader import ItemLoader
 from sainsburys.items import SainsburysItem
+from scrapy.utils.log import configure_logging 
 class SainsburysImageDowloader(scrapy.Spider):
     name = 'imgdownloader'
-
+    configure_logging(install_root_handler=False)
+    logging.basicConfig(
+        filename='log.txt',
+        format='%(levelname)s: %(message)s',
+        level=logging.INFO
+    )
     
     script= '''
         function main(splash, args)
@@ -41,6 +50,29 @@ class SainsburysImageDowloader(scrapy.Spider):
             
         end
     '''
+    frtoeng = "".maketrans("àâçéèêîôùû", "aaceeeiouu")
+    def cleanup(self, string):
+        string = ft.fix_text(string) # fix text encoding issues
+        string = string.translate(self.frtoeng)
+        string = string.encode("ascii", errors="ignore").decode() #remove non ascii chars
+        string = string.lower() #make lower case
+        chars_to_remove = [")","(",".","|","[","]","{","}","'","`","/","~"]
+        rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
+        string = re.sub(rx, '', string) #remove the list of chars defined above
+        string = string.replace('&', '')
+        string = string.replace('and', '')
+        string = string.replace('ml', '')
+        string = string.replace('Ml', 'ml')
+        string = string.replace(',', ' ')
+        string = string.replace('-', ' ')
+        string = string.replace('+', ' ')
+        #string="".join(sorted(string))
+        #string = string.replace('shampoo', '') (doesnt work as most of the conditioners come into play which they shouldnt)
+        #string = string.title() # normalise case - capital at start of each word
+        string = re.sub(' +',' ',string).strip() # get rid of multiple spaces and replace with a single space
+        # string = ' '+ string +' ' # pad names for ngrams...
+        string = re.sub(r'[,-./]|\sBD',r'', string)
+        return string
     def start_requests(self):
         yield SplashRequest(url="https://www.sainsburys.co.uk/shop/gb/groceries/health-beauty/shampoo-247823-44", callback=self.parse1, endpoint="execute",args={
             'timeout':1800,
@@ -52,8 +84,9 @@ class SainsburysImageDowloader(scrapy.Spider):
             loader=ItemLoader(item=SainsburysItem(), selector=product)
             sainsburys_img_url = response.urljoin(product.xpath(".//div/div/h3/a/img/@src").get())
             sainsburys_prod_name = product.xpath("normalize-space(.//div/div/h3/a/text()[1])").get()
+            name= self.cleanup(sainsburys_prod_name)
             loader.add_value('image_urls', sainsburys_img_url)    
-            loader.add_value('image_name',sainsburys_prod_name)
+            loader.add_value('image_name',name)
             yield loader.load_item()  
         lnk2=response.xpath("//div[@class='pagination']/ul/li[@class='next']/a/@href").get()
         if lnk2:
