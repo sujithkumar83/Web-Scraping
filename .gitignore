@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Web Scraping outputs
+imgs/full/*.jpg
+
+
 # C extensions
 *.so
 

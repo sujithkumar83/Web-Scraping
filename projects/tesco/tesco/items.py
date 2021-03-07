@@ -6,9 +6,13 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.loader.processors import TakeFirst, MapCompose
+import os
 
 
 class TescoItem(scrapy.Item):
     image_urls = scrapy.Field()
     images = scrapy.Field()
-    image_name=scrapy.Field()
+    image_name=scrapy.Field(
+        output_processor= TakeFirst()
+    )

@@ -73,7 +73,7 @@ class MorrisonHaircareSpider(scrapy.Spider):
                 'morrisons_rating': product.xpath(".//div[@class='review-wrapper']/span[@class='fop-rating']/span[@class='fop-rating-inner']/@title").get(),
                 'morrisons_unit_price': product.xpath(".//div[@class='price-group-wrapper']/span[@class='fop-unit-price']/text()").get(),
                 'morrisons_availability': product.xpath(".//div/a/span[@class='fop-mark-oos fop-image-corner']/text()").get(),
-                'morrisons_prod_name': product.xpath(".//h4[@class='fop-title']/@title").get() + ' ' + product.xpath(".//div[@class='fop-description']/span[@class='fop-catch-weight']/text()").get()
+                'morrisons_prod_name': product.xpath(".//h4[@class='fop-title']/@title").get() + ' ' + str(product.xpath(".//div[@class='fop-description']/span[@class='fop-catch-weight']/text()").get())
                 #'morrisons_img_url': response.urljoin(product.xpath(".//div/a/div/div/div/img/@src").get())
                 
             }

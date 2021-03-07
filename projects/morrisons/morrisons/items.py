@@ -14,4 +14,7 @@ class MorrisonsItem(scrapy.Item):
     
     image_urls = scrapy.Field()
     images = scrapy.Field()
-    image_name=scrapy.Field()
+    image_name=scrapy.Field(
+        output_processor= TakeFirst()
+        
+    )

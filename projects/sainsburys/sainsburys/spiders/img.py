@@ -61,11 +61,12 @@ class SainsburysImageDowloader(scrapy.Spider):
         string = re.sub(rx, '', string) #remove the list of chars defined above
         string = string.replace('&', '')
         string = string.replace('and', '')
-        string = string.replace('ml', '')
+        string = string.replace('ML', '')
         string = string.replace('Ml', 'ml')
         string = string.replace(',', ' ')
         string = string.replace('-', ' ')
         string = string.replace('+', ' ')
+        string = string.replace(':', ' ')
         #string="".join(sorted(string))
         #string = string.replace('shampoo', '') (doesnt work as most of the conditioners come into play which they shouldnt)
         #string = string.title() # normalise case - capital at start of each word

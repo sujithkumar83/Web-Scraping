@@ -65,7 +65,7 @@ class MorrisonsImageDowloader(scrapy.Spider):
         string = re.sub(rx, '', string) #remove the list of chars defined above
         string = string.replace('&', '')
         string = string.replace('and', '')
-        string = string.replace('ml', '')
+        string = string.replace('ML', 'ml')
         string = string.replace('Ml', 'ml')
         string = string.replace(',', ' ')
         string = string.replace('-', ' ')
@@ -90,7 +90,7 @@ class MorrisonsImageDowloader(scrapy.Spider):
         for product in response.xpath("//ul[@class='fops fops-regular fops-shelf']/li/div[contains(@class,'fop-item')]"):
             loader=ItemLoader(item=MorrisonsItem(), selector=product)
             morrisons_img_url = response.urljoin(product.xpath(".//div/a/div/div/div/img/@src").get())
-            morrisons_prod_name = product.xpath(".//h4[@class='fop-title']/@title").get() + ' ' + product.xpath(".//div[@class='fop-description']/span[@class='fop-catch-weight']/text()").get()
+            morrisons_prod_name = product.xpath(".//h4[@class='fop-title']/@title").get() + ' ' + str(product.xpath(".//div[@class='fop-description']/span[@class='fop-catch-weight']/text()").get())
             name= self.cleanup(morrisons_prod_name)
             loader.add_value('image_urls', morrisons_img_url)    
             loader.add_value('image_name',name)
