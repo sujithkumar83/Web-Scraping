@@ -76,11 +76,12 @@ class WaitroseImageDowloader(scrapy.Spider):
         string = re.sub(rx, '', string) #remove the list of chars defined above
         string = string.replace('&', '')
         string = string.replace('and', '')
-        string = string.replace('ml', '')
+        string = string.replace('ML', 'ml')
         string = string.replace('Ml', 'ml')
         string = string.replace(',', ' ')
         string = string.replace('-', ' ')
         string = string.replace('+', ' ')
+        string = string.replace(':', ' ')
         #string="".join(sorted(string))
         #string = string.replace('shampoo', '') (doesnt work as most of the conditioners come into play which they shouldnt)
         #string = string.title() # normalise case - capital at start of each word
@@ -124,10 +125,11 @@ class WaitroseImageDowloader(scrapy.Spider):
     def parse1(self, response):
         for product in response.xpath("//main[@class='appMain___2G0oc']/div/div/div/div[contains(@class,'row')]/article"):
             
-            waitrose_img_url = product.xpath(".//div/section/div[contains(@class, 'image___1aDKB')]/a/div[contains(@class, 'placeholder___2ydJA')]/div[contains(@class, 'LazyLoad ')]/picture/div/img/@src").get()
+            waitrose_img_url = product.xpath(".//picture/div/img/@src").get()
             waitrose_prod_name = product.xpath(".//@data-product-name").get()+ ' '+ product.xpath(".//div/section/header/a/span/text()").get()
             name= self.cleanup(waitrose_prod_name)
             print(waitrose_img_url)
+            # print(name)
             loader=ItemLoader(item=WaitroseItem(), selector=product)
             loader.add_value('image_urls', waitrose_img_url)    
             loader.add_value('image_name', name)

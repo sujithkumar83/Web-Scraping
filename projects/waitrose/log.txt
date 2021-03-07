@@ -14589,3 +14589,1728 @@ INFO: Dumping Scrapy stats:
  'splash/execute/response_count/200': 1,
  'start_time': datetime.datetime(2021, 3, 7, 5, 40, 47, 648306)}
 INFO: Spider closed (finished)
+INFO: Scrapy 1.6.0 started (bot: waitrose)
+INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+INFO: Overridden settings: {'BOT_NAME': 'waitrose', 'DOWNLOAD_TIMEOUT': 1200, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'waitrose.spiders', 'SPIDER_MODULES': ['waitrose.spiders']}
+INFO: Telnet Password: 0624835a829344bd
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['waitrose.pipelines.ImageDownloaderPipeline',
+ 'waitrose.pipelines.SQLlitePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo via http://192.168.1.9:8050/execute> (referer: None)
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene classic clean shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['loreal elvive colour shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['argan argan oil rejuvenating shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['tresemme shampoo moisture rich 800'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene volume body shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders shampoo classic 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene repair protect shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene 3 in 1 classic clean 450'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders 2in1 classic clean 225'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences coconut shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['loreal elvive oil nourishing shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['tresemme shampoo deep cleansing 800'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene smooth sleek shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['avalon organics tea tree shampoo 325'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene grow strong shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences argan oil shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['essential daily care shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['neals yard rose shampoo 200'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders itchy scalp shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie mega shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders 2in1 classic clean 450'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['loreal elvive restoring shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders classic shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders itchy scalp shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders itchy scalp shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['essential nourishing shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene colour protect shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['neals yard lavender shampoo 200'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene 3in1 smooth sleek 450'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders 2 in 1 total care 225'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie aussome volume shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders shampoo citrus fresh 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders supreme moisture 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['argan argan oil 5oil miracle shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie miracle moist shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['avalon organics lemon shampoo 325'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['richard ward chelsea cleanse condition 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders coconut shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['fit kit gentle shampoo conditioner 200'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene pro v thickening shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders shampoo apple fresh 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['vosene original shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['essential daily care 2 in 1 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders colour protect 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['richard ward sleek shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['eco warrior shampoo bar 100g'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie sos kiss of life shampoo 290'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['tresemme colour shampoo 800'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['avalon organics lavender shampoo 325'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie colour mate shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['essential anti druff 2 in 1 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['faith in nature wild rose shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie mega shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie aussome volume shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['avalon organics rosemary shampoo 325'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie miracle moist shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders deep cleanse shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['faith in nature grapefruit shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders smooth shampoo 500'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences volume shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences clean shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['dgj argan oil shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders oil control shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie blonde purple shampoo 290'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences aloe mango shampoo 380'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['sheer blonde go blonder shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['neutrogena tgel shampoo dry hair 125'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['bull dog ant druff shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['john frieda lift shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie colour mate shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences repair shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['faith in nature lavender shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie refill moist shampoo 480'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders repair shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['hair biology purple shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx kuku oil shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx brazilian keratin shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences deep repair shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie miracle shine shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['brilliant brunette protecting shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['dgj hairjuice shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['loreal kids shampoo berry strawberry 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences reuse argan shampoo 430'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['avalon organics peppermint shampoo 325'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['hask moni coconut oil shampoo 355'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences hydrate shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['maui moisture shea butter shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['noughty to the rescue shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['frizz ease shampoo miraculous recovery 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie miracle moist spray 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie reuse miracle shampoo 430'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences argan refill shampoo 480'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['senspa deep cleanse shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders 2in1 apple fresh 450'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders 2in1 citrus care 450'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['john frieda shampoo detox repair 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['hask argan oil repairing shampoo 355'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['dgj colour save shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['frizz ease dream curls shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene shampoo reuse bottle repair 430'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene repair shampoo refill 480'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['head shoulders daily shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['sensspa nourishing shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['percy reed volumising shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['herbal essences aloe hemp shampoo 380'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx argan oil morocco shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['sheer blonde moisturising shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['aussie calm the frizz shampoo 300'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['vosene kids 3in1 tea tree shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx coconut oil shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['john frieda violet crush shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['dgj kids lice repel shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['percy reed wonder shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['cantu moisturizing curl activator cream 355'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['tresemme biotin repair 7 shampoo 400'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['maui moisture curl quench shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['john frieda silver shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['john frieda violet crush shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['pantene hair biology full vibrant 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['umberto giannini grow long shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['noughty wave hello shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['hask keratin protein smoothing shampoo 355'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['dgj clarifying shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['cantu cleansing cream shampoo 355g'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['maui moisture curl quench shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx keratin oil shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['percy reed hydrating shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['maui moisture hibiscus water 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['noughty care taker shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['umberto giannini violet shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['hedrin all in one shampoo 100'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['hair biology de frizz shampoo 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['umberto giannini curl jelly wash 250'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx charcoal detox shampoo 385'], 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': ['ogx orchid oil shampoo 385'], 'images': []}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2611,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 1718180,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 3, 7, 9, 56, 25, 477244),
+ 'item_scraped_count': 135,
+ 'log_count/DEBUG': 136,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'splash/execute/request_count': 1,
+ 'splash/execute/response_count/200': 1,
+ 'start_time': datetime.datetime(2021, 3, 7, 9, 55, 20, 656341)}
+INFO: Spider closed (finished)
+INFO: Scrapy 1.6.0 started (bot: waitrose)
+INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+INFO: Overridden settings: {'BOT_NAME': 'waitrose', 'DOWNLOAD_TIMEOUT': 1200, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'waitrose.spiders', 'SPIDER_MODULES': ['waitrose.spiders']}
+INFO: Telnet Password: 60f42c24caeb90cf
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['waitrose.pipelines.ImageDownloaderPipeline',
+ 'waitrose.pipelines.SQLlitePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Received SIGINT, shutting down gracefully. Send again to force 
+INFO: Closing spider (shutdown)
+INFO: Received SIGINT twice, forcing unclean shutdown
+DEBUG: Retrying <GET https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo via http://192.168.1.9:8050/execute> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'downloader/request_bytes': 2611,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2021, 3, 7, 10, 45, 21, 979601),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 33,
+ 'retry/count': 1,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'splash/execute/request_count': 1,
+ 'start_time': datetime.datetime(2021, 3, 7, 10, 22, 50, 425679)}
+INFO: Spider closed (shutdown)
+INFO: Scrapy 1.6.0 started (bot: waitrose)
+INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+INFO: Overridden settings: {'BOT_NAME': 'waitrose', 'DOWNLOAD_TIMEOUT': 1200, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'waitrose.spiders', 'SPIDER_MODULES': ['waitrose.spiders']}
+INFO: Telnet Password: f7b239be08247e4c
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['waitrose.pipelines.ImageDownloaderPipeline',
+ 'waitrose.pipelines.SQLlitePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo via http://192.168.1.9:8050/execute> (referer: None)
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene classic clean shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive colour shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil rejuvenating shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo moisture rich 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene volume body shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo classic 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3 in 1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences coconut shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive oil nourishing shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo deep cleansing 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene smooth sleek shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics tea tree shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene grow strong shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard rose shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive restoring shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders classic shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential nourishing shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene colour protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard lavender shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3in1 smooth sleek 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2 in 1 total care 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo citrus fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders supreme moisture 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil 5oil miracle shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lemon shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward chelsea cleanse condition 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders coconut shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'fit kit gentle shampoo conditioner 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene pro v thickening shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo apple fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene original shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders colour protect 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward sleek shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'eco warrior shampoo bar 100g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie sos kiss of life shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme colour shampoo 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lavender shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential anti druff 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature wild rose shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics rosemary shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders deep cleanse shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature grapefruit shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders smooth shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences volume shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences clean shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders oil control shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie blonde purple shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe mango shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde go blonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neutrogena tgel shampoo dry hair 125ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'bull dog ant druff shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda lift shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature lavender shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie refill moist shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology purple shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx kuku oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx brazilian keratin shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences deep repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle shine shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'brilliant brunette protecting shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj hairjuice shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal kids shampoo berry strawberry 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences reuse argan shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics peppermint shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask moni coconut oil shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences hydrate shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture shea butter shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty to the rescue shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease shampoo miraculous recovery 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist spray 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie reuse miracle shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan refill shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'senspa deep cleanse shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 apple fresh 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 citrus care 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda shampoo detox repair 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask argan oil repairing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj colour save shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease dream curls shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene shampoo reuse bottle repair 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair shampoo refill 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders daily shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sensspa nourishing shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed volumising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe hemp shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx argan oil morocco shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde moisturising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie calm the frizz shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene kids 3in1 tea tree shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx coconut oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj kids lice repel shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed wonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu moisturizing curl activator cream 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme biotin repair 7 shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda silver shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene hair biology full vibrant 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini grow long shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty wave hello shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask keratin protein smoothing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj clarifying shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu cleansing cream shampoo 355g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx keratin oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed hydrating shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture hibiscus water 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty care taker shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini violet shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hedrin all in one shampoo 100ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology de frizz shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini curl jelly wash 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx charcoal detox shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx orchid oil shampoo 385ml', 'images': []}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2611,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 1714174,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 3, 7, 10, 46, 32, 7638),
+ 'item_scraped_count': 135,
+ 'log_count/DEBUG': 136,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'splash/execute/request_count': 1,
+ 'splash/execute/response_count/200': 1,
+ 'start_time': datetime.datetime(2021, 3, 7, 10, 45, 29, 562333)}
+INFO: Spider closed (finished)
+INFO: Scrapy 1.6.0 started (bot: waitrose)
+INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+INFO: Overridden settings: {'BOT_NAME': 'waitrose', 'DOWNLOAD_TIMEOUT': 1200, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'waitrose.spiders', 'SPIDER_MODULES': ['waitrose.spiders']}
+INFO: Telnet Password: 9406ec63be10727c
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['waitrose.pipelines.ImageDownloaderPipeline',
+ 'waitrose.pipelines.SQLlitePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo via http://192.168.1.9:8050/execute> (referer: None)
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene classic clean shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive colour shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil rejuvenating shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo moisture rich 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene volume body shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo classic 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3 in 1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences coconut shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive oil nourishing shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo deep cleansing 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene smooth sleek shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics tea tree shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene grow strong shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard rose shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive restoring shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders classic shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential nourishing shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene colour protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard lavender shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3in1 smooth sleek 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2 in 1 total care 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo citrus fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders supreme moisture 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil 5oil miracle shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lemon shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward chelsea cleanse condition 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders coconut shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'fit kit gentle shampoo conditioner 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene pro v thickening shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo apple fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene original shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders colour protect 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward sleek shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'eco warrior shampoo bar 100g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie sos kiss of life shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme colour shampoo 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lavender shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential anti druff 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature wild rose shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics rosemary shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders deep cleanse shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature grapefruit shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders smooth shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences volume shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences clean shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders oil control shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie blonde purple shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe mango shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde go blonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neutrogena tgel shampoo dry hair 125ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'bull dog ant druff shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda lift shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature lavender shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie refill moist shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology purple shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx kuku oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx brazilian keratin shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences deep repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle shine shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'brilliant brunette protecting shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj hairjuice shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal kids shampoo berry strawberry 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences reuse argan shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics peppermint shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask moni coconut oil shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences hydrate shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture shea butter shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty to the rescue shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease shampoo miraculous recovery 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist spray 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie reuse miracle shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan refill shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'senspa deep cleanse shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 apple fresh 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 citrus care 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda shampoo detox repair 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask argan oil repairing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj colour save shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease dream curls shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene shampoo reuse bottle repair 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair shampoo refill 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders daily shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sensspa nourishing shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed volumising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe hemp shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx argan oil morocco shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde moisturising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie calm the frizz shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene kids 3in1 tea tree shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx coconut oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj kids lice repel shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed wonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu moisturizing curl activator cream 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme biotin repair 7 shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda silver shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene hair biology full vibrant 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini grow long shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty wave hello shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask keratin protein smoothing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj clarifying shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu cleansing cream shampoo 355g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx keratin oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed hydrating shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture hibiscus water 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty care taker shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini violet shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hedrin all in one shampoo 100ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology de frizz shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini curl jelly wash 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx charcoal detox shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx orchid oil shampoo 385ml', 'images': []}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2611,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 1714173,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 3, 7, 11, 1, 32, 917939),
+ 'item_scraped_count': 135,
+ 'log_count/DEBUG': 136,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'splash/execute/request_count': 1,
+ 'splash/execute/response_count/200': 1,
+ 'start_time': datetime.datetime(2021, 3, 7, 11, 0, 31, 127986)}
+INFO: Spider closed (finished)
+INFO: Scrapy 1.6.0 started (bot: waitrose)
+INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+INFO: Overridden settings: {'BOT_NAME': 'waitrose', 'DOWNLOAD_TIMEOUT': 1200, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'waitrose.spiders', 'SPIDER_MODULES': ['waitrose.spiders']}
+INFO: Telnet Password: 8a0db5e01083f111
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['waitrose.pipelines.ImageDownloaderPipeline',
+ 'waitrose.pipelines.SQLlitePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo via http://192.168.1.9:8050/execute> (referer: None)
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene classic clean shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive colour shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil rejuvenating shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo moisture rich 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene volume body shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo classic 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3 in 1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences coconut shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive oil nourishing shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo deep cleansing 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene smooth sleek shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics tea tree shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene grow strong shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard rose shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive restoring shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders classic shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential nourishing shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene colour protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard lavender shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3in1 smooth sleek 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2 in 1 total care 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo citrus fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders supreme moisture 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil 5oil miracle shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lemon shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward chelsea cleanse condition 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders coconut shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'fit kit gentle shampoo conditioner 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene pro v thickening shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo apple fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene original shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders colour protect 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward sleek shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'eco warrior shampoo bar 100g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie sos kiss of life shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme colour shampoo 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lavender shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential anti druff 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature wild rose shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics rosemary shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders deep cleanse shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature grapefruit shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders smooth shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences volume shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences clean shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders oil control shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie blonde purple shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe mango shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde go blonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neutrogena tgel shampoo dry hair 125ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'bull dog ant druff shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda lift shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature lavender shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie refill moist shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology purple shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx kuku oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx brazilian keratin shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences deep repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle shine shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'brilliant brunette protecting shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj hairjuice shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal kids shampoo berry strawberry 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences reuse argan shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics peppermint shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask moni coconut oil shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences hydrate shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture shea butter shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty to the rescue shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease shampoo miraculous recovery 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist spray 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie reuse miracle shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan refill shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'senspa deep cleanse shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 apple fresh 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 citrus care 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda shampoo detox repair 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask argan oil repairing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj colour save shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease dream curls shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene shampoo reuse bottle repair 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair shampoo refill 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders daily shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sensspa nourishing shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed volumising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe hemp shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx argan oil morocco shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde moisturising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie calm the frizz shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene kids 3in1 tea tree shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx coconut oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj kids lice repel shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed wonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu moisturizing curl activator cream 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme biotin repair 7 shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda silver shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene hair biology full vibrant 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini grow long shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty wave hello shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask keratin protein smoothing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj clarifying shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu cleansing cream shampoo 355g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx keratin oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed hydrating shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture hibiscus water 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty care taker shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini violet shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hedrin all in one shampoo 100ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology de frizz shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini curl jelly wash 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx charcoal detox shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx orchid oil shampoo 385ml', 'images': []}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2611,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 1712390,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 3, 7, 11, 9, 40, 549935),
+ 'item_scraped_count': 135,
+ 'log_count/DEBUG': 136,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'splash/execute/request_count': 1,
+ 'splash/execute/response_count/200': 1,
+ 'start_time': datetime.datetime(2021, 3, 7, 11, 8, 38, 335514)}
+INFO: Spider closed (finished)
+INFO: Scrapy 1.6.0 started (bot: waitrose)
+INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+INFO: Overridden settings: {'BOT_NAME': 'waitrose', 'DOWNLOAD_TIMEOUT': 1200, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'waitrose.spiders', 'SPIDER_MODULES': ['waitrose.spiders']}
+INFO: Telnet Password: 7989b6e056b3dae6
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['waitrose.pipelines.ImageDownloaderPipeline',
+ 'waitrose.pipelines.SQLlitePipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo via http://192.168.1.9:8050/execute> (referer: None)
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene classic clean shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive colour shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil rejuvenating shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo moisture rich 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene volume body shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo classic 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3 in 1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences coconut shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive oil nourishing shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme shampoo deep cleansing 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene smooth sleek shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics tea tree shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene grow strong shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard rose shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 classic clean 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal elvive restoring shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders classic shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders itchy scalp shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential nourishing shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene colour protect shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neals yard lavender shampoo 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene 3in1 smooth sleek 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2 in 1 total care 225ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo citrus fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders supreme moisture 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'argan argan oil 5oil miracle shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lemon shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward chelsea cleanse condition 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders coconut shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'fit kit gentle shampoo conditioner 200ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene pro v thickening shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders shampoo apple fresh 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene original shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential daily care 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders colour protect 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'richard ward sleek shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'eco warrior shampoo bar 100g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie sos kiss of life shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme colour shampoo 800ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics lavender shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'essential anti druff 2 in 1 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature wild rose shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie mega shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie aussome volume shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics rosemary shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders deep cleanse shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature grapefruit shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders smooth shampoo 500ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences volume shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences clean shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj argan oil shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders oil control shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie blonde purple shampoo 290ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe mango shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde go blonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'neutrogena tgel shampoo dry hair 125ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'bull dog ant druff shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda lift shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie colour mate shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'faith in nature lavender shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie refill moist shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology purple shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx kuku oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx brazilian keratin shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences deep repair shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle shine shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'brilliant brunette protecting shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj hairjuice shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'loreal kids shampoo berry strawberry 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences reuse argan shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'avalon organics peppermint shampoo 325ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask moni coconut oil shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences hydrate shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture shea butter shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty to the rescue shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease shampoo miraculous recovery 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie miracle moist spray 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie reuse miracle shampoo 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences argan refill shampoo 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'senspa deep cleanse shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 apple fresh 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders 2in1 citrus care 450ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda shampoo detox repair 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask argan oil repairing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj colour save shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'frizz ease dream curls shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene shampoo reuse bottle repair 430ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene repair shampoo refill 480ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'head shoulders daily shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sensspa nourishing shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed volumising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'herbal essences aloe hemp shampoo 380ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx argan oil morocco shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'sheer blonde moisturising shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'aussie calm the frizz shampoo 300ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'vosene kids 3in1 tea tree shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx coconut oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj kids lice repel shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed wonder shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu moisturizing curl activator cream 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'tresemme biotin repair 7 shampoo 400ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda silver shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'john frieda violet crush shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'pantene hair biology full vibrant 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini grow long shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty wave hello shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hask keratin protein smoothing shampoo 355ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'dgj clarifying shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'cantu cleansing cream shampoo 355g', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture curl quench shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx keratin oil shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'percy reed hydrating shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'maui moisture hibiscus water 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'noughty care taker shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini violet shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hedrin all in one shampoo 100ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'hair biology de frizz shampoo 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'umberto giannini curl jelly wash 250ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx charcoal detox shampoo 385ml', 'images': []}
+DEBUG: Scraped from <200 https://www.waitrose.com/ecom/shop/browse/groceries/toiletries_health_and_beauty/hair_care/shampoo>
+{'image_name': 'ogx orchid oil shampoo 385ml', 'images': []}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2611,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 1714172,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 3, 7, 11, 44, 36, 514630),
+ 'item_scraped_count': 135,
+ 'log_count/DEBUG': 136,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'splash/execute/request_count': 1,
+ 'splash/execute/response_count/200': 1,
+ 'start_time': datetime.datetime(2021, 3, 7, 11, 43, 32, 745747)}
+INFO: Spider closed (finished)
